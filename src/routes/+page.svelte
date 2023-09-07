@@ -7,6 +7,12 @@
 	import Paragraph from '../lib/components/Paragraph.svelte';
 	import Section from '../lib/components/Section.svelte';
 	import SubHeadline from '../lib/components/SubHeadline.svelte';
+
+	import { goto } from '$app/navigation';
+
+	function bookACall() {
+		goto('/book');
+	}
 </script>
 
 <Section backgroundImage="true">
@@ -16,7 +22,7 @@
 			We do <span class="text-white">IT</span> right.
 		</Headline>
 		<Paragraph>Jeffries and Madison, IT consultants</Paragraph>
-		<ButtonPrimary>Book a call</ButtonPrimary>
+		<ButtonPrimary handleClick={bookACall}>Book a call</ButtonPrimary>
 	</div>
 </Section>
 
