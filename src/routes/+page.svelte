@@ -22,7 +22,7 @@
 			We do <span class="text-white">IT</span> right.
 		</Headline>
 		<Paragraph>Jeffries and Madison, IT consultants</Paragraph>
-		<ButtonPrimary handleClick={bookACall}>Book a call</ButtonPrimary>
+		<ButtonPrimary>Book a call</ButtonPrimary>
 	</div>
 </Section>
 
