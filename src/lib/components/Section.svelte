@@ -5,7 +5,7 @@
 
 <section
 	class="min-h-screen flex justify-center items-center bg-dark-blue px-12 lg:px-28
-	{backgroundImage ? 'background-image' : ''} {topGradient ? 'top-gradient' : ''}"
+		{backgroundImage ? 'background-image' : ''} {topGradient ? 'top-gradient' : ''}"
 >
 	<slot />
 </section>

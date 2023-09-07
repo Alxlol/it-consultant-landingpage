@@ -21,7 +21,7 @@
 </Section>
 
 <Section>
-	<div>
+	<div class="w-full flex flex-col items-center">
 		<SubHeadline>Meet the Team</SubHeadline>
 		<div class="flex flex-col lg:flex-row gap-10">
 			<Headshots
