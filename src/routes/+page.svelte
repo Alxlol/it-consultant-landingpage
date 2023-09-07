@@ -9,6 +9,7 @@
 	import SubHeadline from '../lib/components/SubHeadline.svelte';
 
 	import { goto } from '$app/navigation';
+	import ObserverFade from '../lib/components/ObserverFade.svelte';
 
 	function bookACall() {
 		goto('/book');
@@ -16,13 +17,15 @@
 </script>
 
 <Section backgroundImage="true">
-	<div class="hidden flex-1 lg:block" />
+	<div class="hidden w-40 lg:block" />
 	<div class="flex-1">
 		<Headline>
 			We do <span class="text-white">IT</span> right.
 		</Headline>
 		<Paragraph>Jeffries and Madison, IT consultants</Paragraph>
-		<ButtonPrimary>Book a call</ButtonPrimary>
+		<a href="mailto:GreatCompany@gmail.com">
+			<ButtonPrimary>Book a call</ButtonPrimary>
+		</a>
 	</div>
 </Section>
 
@@ -33,17 +36,17 @@
 			<Headshots
 				text="Wilhelm Ballard"
 				secondaryText="Chief Operations Officer"
-				image="/src/lib/assets/wilhelm.jpg"
+				image="/team/wilhelm.jpg"
 			/>
 			<Headshots
 				text="Leslie Boatwright"
 				secondaryText="Chief Executive Officer"
-				image="/src/lib/assets/leslie.jpg"
+				image="/team/leslie.jpg"
 			/>
 			<Headshots
 				text="Viggo Cimmaron"
 				secondaryText="Chief Technology Officer"
-				image="/src/lib/assets/viggo.jpg"
+				image="/team/viggo.jpg"
 			/>
 		</div>
 	</div>
@@ -52,11 +55,13 @@
 <Section backgroundImage="true" topGradient="true">
 	<div>
 		<SubHeadline>Services</SubHeadline>
-		<div class="flex flex-col items-center lg:flex-row gap-40">
-			<ImageContainer text="Cybersecurity" image="/src/lib/assets/cybersecurity.png" />
-			<ImageContainer text="Risk Mitigation" image="/src/lib/assets/riskmitigation.png" />
-			<ImageContainer text="IT Strategy Development" image="/src/lib/assets/strategy.png" />
-		</div>
+		<ObserverFade>
+			<div class="flex flex-col items-center lg:flex-row gap-40">
+				<ImageContainer text="Cybersecurity" image="/services/cybersecurity.png" />
+				<ImageContainer text="Risk Mitigation" image="/services/riskmitigation.png" />
+				<ImageContainer text="IT Strategy Development" image="/services/strategy.png" />
+			</div>
+		</ObserverFade>
 	</div>
 </Section>
 <Section>

@@ -13,7 +13,7 @@
 <style>
 	.background-image {
 		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(29, 37, 73, 1)),
-			url('../assets/bg_img.jpg');
+			url('/bg_img.jpg');
 
 		background-size: cover;
 	}

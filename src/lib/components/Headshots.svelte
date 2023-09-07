@@ -16,7 +16,7 @@
 	<div bind:this={node}>
 		{#if intersecting}
 			<div
-				transition:fly={{ y: 400, delay: 500, duration: 500 }}
+				transition:fly={{ y: 400, delay: 800, duration: 800 }}
 				class="text-center flex flex-col items-center"
 			>
 				<div class="w-72 h-72 2xl:w-96 2xl:h-96 overflow-hidden mb-4">
