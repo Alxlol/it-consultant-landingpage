@@ -20,8 +20,7 @@
 
 	.top-gradient {
 		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(29, 37, 73, 1)),
-			linear-gradient(to top, rgba(255, 255, 255, 0), rgba(29, 37, 73, 1)),
-			url('../assets/bg_img.jpg');
+			linear-gradient(to top, rgba(255, 255, 255, 0), rgba(29, 37, 73, 1)), url('/bg_img.jpg');
 
 		background-size: cover;
 	}
